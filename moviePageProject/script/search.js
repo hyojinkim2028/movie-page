@@ -1,7 +1,12 @@
 // 홈버튼 누르면 메인 창으로 돌아옴
-document.getElementById('homeBtn').addEventListener('click', function () {
-  location.href = './index.html'
-})
+
+const goHome = (url) => {
+  location.href = url
+}
+
+document
+  .getElementById('homeBtn')
+  .addEventListener('click', (event) => goHome('./index.html'))
 
 // 검색버튼 누르면 이벤트 실행
 document.getElementById('searchBtn').addEventListener('click', function () {
